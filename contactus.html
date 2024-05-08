@@ -3,21 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>Contact us</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav> Contact us  </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="where you can find us.html">Where you can find us</a></li>
+                <li><a href="prices.html">Prices</a></li>
+                <li><a href="ourstyles.html">Our styles</a></li>
+            </ul>
+        </nav>      
     </header>
-    
     <main>
+<body>
+    <h1>Contact us</h1>
+    
+    <h2>Adress</h2>
+    <p>Mr. Nillson's Barbershop</p>
+    <p>Stockholm,Malmö,Göteborg,Västerås</p>
+    
+    <h2>Telephone</h2>
+    <p>Telephone number: 012-3456789</p>
+    
+    <h2>E-post</h2>
+    <p>E-post: info@mrsnilson.com</p>
+    
+    <h2>Opening hours</h2>
+    <p>Monday - Friday: 09:00 - 18:00</p>
+    <p>Saturday: 10:00 - 15:00</p>
+    
+    <h2>Contact us via the form below:</h2>
+    <form action="/skicka-meddelande" method="post">
+        <label for="namn">Name:</label><br>
+        <input type="text" id="namn" name="namn"><br><br>
         
-    </main>
-    
-    
-    <footer></footer>
+        <label for="epost">E-mail:</label><br>
+        <input type="email" id="epost" name="epost"><br><br>
+        
+        <label for="meddelande">Message:</label><br>
+        <textarea id="meddelande" name="meddelande" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Send">
+    </form>
+</main>
 </body>
 </html>
+    
+    
+    
 
 <script src = "salong.js" ></script>

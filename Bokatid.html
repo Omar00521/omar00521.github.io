@@ -7,19 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href = "index.html"> Home </a>
-    <h2>Barbershop Appointment Booking</h2>
-    <div class="mb-4">
-        <label for="exampleFormControlInput1" class="form-label">Email address</label>
-        <input type="email" class="form-control border-success" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      
-      <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="where you can find us.html">Where you can find us</a></li>
+            <li><a href="contactus.html">Contact us</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="ourstyles.html">Our styles</a></li>
+        </ul>
+    </nav>
+
+    <h2>Book an Appointment</h2>
+
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
         
-      </div>
-      
-      <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
-      </div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+        
+        <label for="date">Preferred Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+        
+        <label for="time">Preferred Time:</label><br>
+        <input type="time" id="time" name="time" required><br><br>
+        
+        <label for="message">Additional Notes:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+        
+    </form>
+
+    <button onclick="myFunction()">Book appointment</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Your appointment has been booked!";
+        }
+    </script>
     
+    <img src="c:\Users\omar.bah\Downloads\Designer (13).jpeg" alt="Book an Appointment" class="center-image" height="800" width="1000">
+ 
 </body>
 </html>
